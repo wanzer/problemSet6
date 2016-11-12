@@ -17,7 +17,6 @@ class Analyzer():
         # TODO
         self.sentiment_score = 0
         token = TweetTokenizer()
-    
         text_list = token.tokenize(text)
         for text in text_list:
             for word in open(self.positives).readlines():
@@ -26,6 +25,5 @@ class Analyzer():
             for word in open(self.negatives).readlines():
                 if text == word.rstrip():
                     self.sentiment_score -= 1
-        
         return self.sentiment_score
         

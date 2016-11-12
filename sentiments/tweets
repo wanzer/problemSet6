@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-
 # TODO
 from helpers import get_user_timeline
 import sys
 from analyzer import Analyzer
 from termcolor import colored
-
 
 def main():
     # ensure proper usage
